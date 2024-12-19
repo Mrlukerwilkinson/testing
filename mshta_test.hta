@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+// Create an instance of the WScript.Shell ActiveXObject
+var shell = new ActiveXObject("WScript.Shell");
+
+// Launch the calculator application
+// '0' parameter hides the window after executing the command
+shell.Run("calc.exe", 0, false);
+
+// Close the current HTA window to prevent it from lingering in the background
+window.close();
+</script>
+</head>
+</html>
